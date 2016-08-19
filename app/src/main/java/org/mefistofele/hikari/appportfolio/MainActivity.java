@@ -42,33 +42,12 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
-        String message;
-        switch(v.getId()) {
-            case R.id.button_first_project:
-                message = getString(R.string.first_project);
-                break;
-            case R.id.button_second_project:
-                message = getString(R.string.second_project);
-                break;
-            case R.id.button_third_project:
-                message = getString(R.string.third_project);
-                break;
-            case R.id.button_forth_project:
-                message = getString(R.string.forth_project);
-                break;
-            case R.id.button_fifth_project:
-                message = getString(R.string.fifth_project);
-                break;
-            case R.id.button_sixth_project:
-                message = getString(R.string.sixth_project);
-                break;
-            default:
-                message = getString(R.string.unknown_project);
-        }
+        Button button = (Button) v;
+        String appName = button.getText().toString();
 
         switch (event.getAction() & MotionEvent.ACTION_MASK) {
             case MotionEvent.ACTION_DOWN:
-                display_message(message);
+                display_message(appName);
                 break;
         }
 
