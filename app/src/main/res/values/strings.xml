@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">App Portfolio</string>
+    <string name="main_title">My Android Nanodegree Apps!</string>
+    <string name="first_project">Popular Movies</string>
+    <string name="second_project">Stock Hawk</string>
+    <string name="third_project">Build it Bigger</string>
+    <string name="forth_project">Make your app material</string>
+    <string name="fifth_project">Go Ubiquitous</string>
+    <string name="sixth_project">Capstone</string>
+    <string name="unknown_project">Unknown..need to find the bug</string>
+</resources>
